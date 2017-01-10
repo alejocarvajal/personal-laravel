@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+   <header>
+      <!-- Latest compiled and minified CSS -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="public/css/font-awesome.min.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="public/js/jquery-3.1.1.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <style>
+         * {
+         padding: 0;
+         margin: 0;
+         }
+         .navbar .navbar-nav {
+         background: #2b2b2b;
+         display: inline-block;
+         float: none;
+         }
+         .navbar .navbar-collapse {
+         background: #2b2b2b;
+         text-align: center;
+         }
+         .navbar{
+         border: 1px transparent;
+         }
+         .navbar-header{
+         background: #2b2b2b;
+         }
+         i {
+         color:#fff;
+         }
+         li {
+         width: 60px;
+         }
+         .tooltip-green + .tooltip > .tooltip-inner {
+         background-color: #62d10d;
+         }
+         .tooltip-green + .tooltip > .tooltip-arrow {
+         border-bottom-color:#62d10d;
+         }
+         .contenedor-principal{
+         	margin-top:120px;
+         }
+         .row-fluid{
+         	margin: 0 auto;
+         }
+         .columna{
+            float: left;
+            min-height: 1px;
+            padding: 0px 10px 0px 10px;
+            position: relative;
+         }
+         
+         occitec@hotmail.com
+
+         #home-text{
+            padding: 0px 20px 20px 20px;
+            
+         }
+         #home-social-container{
+            text-align: right;
+         }
+         #home-social{
+            overflow: hidden;
+            display: inline-block;
+            margin-bottom: 0px;
+         }
+         #home-social li{
+             list-style: none;
+             float: left;
+             font-size: 18px;
+             margin-left: 10px;
+             color: #fff;
+             padding: 8px;
+         }
+         .page-heading {
+             display: inline-block;
+             border-bottom: 2px solid #62d10d;
+             padding-bottom: 5px;
+             font-weight: 500;
+             font-size: 2em;
+             color: #8f8f8f;
+         }
+         body{
+            background: rgba(128,124,128,1);
+            background: -moz-linear-gradient(left, rgba(128,124,128,1) 0%, rgba(133,131,133,1) 0%, rgba(237,232,237,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(128,124,128,1)), color-stop(0%, rgba(133,131,133,1)), color-stop(100%, rgba(237,232,237,1)));
+            background: -webkit-linear-gradient(left, rgba(128,124,128,1) 0%, rgba(133,131,133,1) 0%, rgba(237,232,237,1) 100%);
+            background: -o-linear-gradient(left, rgba(128,124,128,1) 0%, rgba(133,131,133,1) 0%, rgba(237,232,237,1) 100%);
+            background: -ms-linear-gradient(left, rgba(128,124,128,1) 0%, rgba(133,131,133,1) 0%, rgba(237,232,237,1) 100%);
+            background: linear-gradient(to right, rgba(128,124,128,1) 0%, rgba(133,131,133,1) 0%, rgba(237,232,237,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#807c80', endColorstr='#ede8ed', GradientType=1 );
+         }
+         .page{
+            background-color: #fff;
+         }
+         section {
+             margin-bottom: 40px !important;
+         }
+      </style>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         			$('[data-toggle="tooltip"]').tooltip();
+         })
+      </script>
+   </header>
+   <body style="zoom: 1; overflow-x: hidden;">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+               <li><a href="#home"><i class="fa fa-home fa-2x tooltip-green" data-toggle="tooltip" data-placement="bottom" title="HOME" aria-hidden="true"></i></a></li>
+               <li><a href="#perfil"><i class="fa fa-user fa-2x tooltip-green" data-toggle="tooltip" data-placement="bottom" title="PERFIL" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-align-justify fa-2x tooltip-green" data-toggle="tooltip" data-placement="bottom" title="DESCRIPCI&Oacute;N" aria-hidden="true" ></i></a></li>
+               <li><a href="#"><i class="fa fa-briefcase fa-2x tooltip-green" data-toggle="tooltip" data-placement="bottom" title="PROYECTOS" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-exclamation-circle fa-2x tooltip-green" data-toggle="tooltip" data-placement="bottom" title="CONTACTO" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </nav>
+      <div class="container-fluid contenedor-principal">
+      	<div class="col-md-6 col-md-offset-3">
+      		<section class="col-md-12" id="home">
+      			<div class="foto columna col-md-5 page"><p>Teconologo de sistemas, con experiencia en desarrollo de aplicacion y administracion de servidores. Capacidad para investigar, con alto nivel de proactividad y adaptibilidad a nuevas tecnologias.</p></div>
+               <div class="columna col-md-7 page">
+                  <div id="home-text">
+                     <div id="home-social-container">
+                        <ul id="home-social">
+                           <li><a target="_blank" href="http://www.linkedin.com/pub/alejandro-vargas/a/650/a26"><img src="public/icon/linkedin.png"></a></a></li>
+                           <li><a target="_blank" href="http://twitter.com/@_alejocarvajal"><img src="public/icon/twitter.png"></a></li>
+                        </ul>
+                     </div>
+                     <div class="av_icon"></div>
+                      <div class="main_name">
+                        <h3 style="font-weight: 500;">Alejandro Carvajal</h3>
+                        <h4>Tecnologo de sistemas</h4>
+                        <h5 class="text-left"><i class="icon-envelope">&nbsp;</i>alejo.carvajal03@gmail.com&nbsp;&nbsp;<i class="icon-twitter">&nbsp;</i>@_alejocarvajal</h5>
+                     </div>
+                     <hr class="highlight-hr">
+                     <p>Teconologo de sistemas, con experiencia en desarrollo de aplicacion y administracion de servidores. Capacidad para investigar, con alto nivel de proactividad y adaptibilidad a nuevas tecnologias.</p>
+                  </div>
+               </div>
+      		</section>
+             <section class="col-md-12 page" id="perfil" data-magellan-destination="profile">
+      
+               <div class="col-md-12 columns">
+                  <h5 class="page-heading">Profile</h5>
+                  <hr>
+               </div>
+                  
+               <div class="col-md-12 columns">
+                   <h4>
+                           Since 1992. I am involved in graphic design and production changing my self many times and growing-up as a developer and manager for a variety of companies. From large graphic printer production to judicious management like Yellow Pages book.
+                   </h4>
+                  <hr>
+                  <p>
+                      Developing strategies for program management, resource optimization, customer service, and staff operations; capable of judicious budget planning and execution with exceeding results in the public and private sectors.&nbsp;Good communication skills. Bilingual in&nbsp;Spanish&nbsp;and English. Natural Leadership talent to achieve project goals and consolidate multidiscipline work groups.
+                  </p>  
+               </div>
+            </section>
+      	</div>
+      </div>
+   </body>
+</html>
